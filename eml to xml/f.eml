@@ -1,0 +1,64 @@
+From: sender@example.com
+To: recipient@example.com
+Subject: Sample EML File for Testing
+Date: Mon, 29 May 2023 12:34:56 -0400
+Message-ID: <unique.message.id@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_Part_0_123456789.987654321"
+
+------=_Part_0_123456789.987654321
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+This is a sample EML file for testing purposes. This part of the email is in plain text.
+
+Thank you for testing with us. Here are some sample lines to make this email lengthier:
+- Line 1
+- Line 2
+- Line 3
+- Line 4
+- Line 5
+- Line 6
+- Line 7
+- Line 8
+- Line 9
+- Line 10
+
+Best regards,
+Sender
+
+------=_Part_0_123456789.987654321
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Hello,</p>
+    <p>This is a sample EML file for testing purposes. This part of the email is in HTML.</p>
+    <p>Thank you for testing with us. Here are some sample lines to make this email lengthier:</p>
+    <ul>
+      <li>Line 1</li>
+      <li>Line 2</li>
+      <li>Line 3</li>
+      <li>Line 4</li>
+      <li>Line 5</li>
+      <li>Line 6</li>
+      <li>Line 7</li>
+      <li>Line 8</li>
+      <li>Line 9</li>
+      <li>Line 10</li>
+    </ul>
+    <p>Best regards,<br>Sender</p>
+  </body>
+</html>
+
+------=_Part_0_123456789.987654321
+Content-Type: application/octet-stream; name="attachment.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="attachment.txt"
+
+U29tZSBzYW1wbGUgYXR0YWNobWVudCBjb250ZW50Lg==
+------=_Part_0_123456789.987654321--

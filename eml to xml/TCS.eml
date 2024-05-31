@@ -1,0 +1,133 @@
+Delivered-To: avinashreddy11105@gmail.com
+Received: by 2002:a05:6a11:58c4:b0:2de:2938:7627 with SMTP id sp4csp1356487pxb;
+        Sat, 3 Sep 2022 08:24:01 -0700 (PDT)
+X-Google-Smtp-Source: AA6agR7E+Y/3AT8/pSwYlx68ZURQxkLOWBSn+TrTE2DDSazgPXpyWS/zCwXEEgn42fLN3jrNPpZy
+X-Received: by 2002:a17:902:bb94:b0:172:8fd9:7438 with SMTP id m20-20020a170902bb9400b001728fd97438mr39167698pls.174.1662218641730;
+        Sat, 03 Sep 2022 08:24:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1662218641; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JTdQrAX7MtgIhtn3gj+WCJDoVZdICBLreJMS3k9HIBPd3lXk4taIR/cKPEySZQnknz
+         YWcnVtP6xhY/83g0o4RaCj6UcPRzLEYCBW4W9Lw5nEN6mBgBTWCqcprVSIAXRYZN7qRf
+         wK7yAxKUcSWEdBxFWeAC5Hf3ORVPUv0XNIurtqlOaH20VESJXQNgaRiEkaj1zqw5ZBEl
+         7lXdJAARp19l1tHSypjpHrLvWQtT4SSQvnxSF4xC0BzoVHwPio61w9vizG3ntTprf5X9
+         nuG+29Cm+18sA7ra+N7BMqn5Nau8w7TgNHNi116/hnMc3+Imj+ZJQCjGG8NeoYUINkdQ
+         gI4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:date:message-id:subject:to:mime-version;
+        bh=ZC+7BKQ1+HcyJBxXuO6ok+aIB9mI5FDff0+kotAs4lc=;
+        b=gl6pd99EDevBoJ/EtcpbYglJb28HCwd1fE7fYrysJ/JPK2oOo/EpQ0XZMLXrQm7nMx
+         Hxx/2PI7cDiXJPYaFMMjI0WLVcrl8b9FBKwmgVQGv3uvLa1gP85GsVMjpBTedmHPeXD+
+         xdx2JPGv5X7x9j3LdKTNxVFVZYsZSSCrU/QCmod/iUtpkJ+6mMG2xX5sKb1byeJlPMmP
+         MvHjNiN/x926HAkPeOc+G5W/uvM2u7J1chsiRSwYsdZb+tsgEyGbRBt+9OE00isaHCIm
+         VTFoz170uoLNvIvTW5o+muwpNm2yLJp8yBg438lpcHHH0zdmPbbdhr48nocapLNnkr1J
+         VaRw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of careers.tcshub@mail.digialm.com designates 124.153.91.61 as permitted sender) smtp.mailfrom=careers.tcshub@mail.digialm.com
+Return-Path: <careers.tcshub@mail.digialm.com>
+Received: from ngtsmtpsrv05dc2-9161.m3cgrid.com (ngtsmtpsrv05dc2-9161.m3cgrid.com. [124.153.91.61])
+        by mx.google.com with ESMTPS id pv15-20020a17090b3c8f00b001fb26c534b0si9936833pjb.41.2022.09.03.08.24.00
+        for <avinashreddy11105@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 03 Sep 2022 08:24:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of careers.tcshub@mail.digialm.com designates 124.153.91.61 as permitted sender) client-ip=124.153.91.61;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of careers.tcshub@mail.digialm.com designates 124.153.91.61 as permitted sender) smtp.mailfrom=careers.tcshub@mail.digialm.com
+Received: from smtp80.tcs-itontap.com (unknown [45.114.76.61]) by m3c.in; Sat,
+ 03 Sep 2022 20:53:59 +0530 (IST)
+X-Feedback-ID: TCS Campus Hiring (FY 23) assessment on 04th September 2022  :tcsion@m3c.io:1:careers.tcshub@mail.digialm.com
+X-Report-Spam: <abuse@m3c.io>
+X-Report-Abuse: <abuse@m3c.io>
+Received: from localhost (localhost [127.0.0.1])
+	by smtp80.tcs-itontap.com (Postfix) with ESMTP id 9BE2860108
+	for <avinashreddy11105@gmail.com>; Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+Received: from smtp80.tcs-itontap.com ([127.0.0.1])
+	by localhost (smtp80.tcs-itontap.com [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id wvH8G4sFSN9y for <avinashreddy11105@gmail.com>;
+	Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by smtp80.tcs-itontap.com (Postfix) with ESMTP id 269976073D
+	for <avinashreddy11105@gmail.com>; Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+X-Virus-Scanned: amavisd-new at smtp80.tcs-itontap.com
+Received: from smtp80.tcs-itontap.com ([127.0.0.1])
+	by localhost (smtp80.tcs-itontap.com [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id OjtlHct5x9cK for <avinashreddy11105@gmail.com>;
+	Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+Received: from [10.10.201.246] (unknown [10.10.113.250])
+	by smtp80.tcs-itontap.com (Postfix) with ESMTP id 0A051600DB
+	for <avinashreddy11105@gmail.com>; Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+Content-Type: multipart/mixed; boundary="===============4210883730687801725=="
+MIME-Version: 1.0
+To: avinashreddy11105@gmail.com
+Subject: TCS Campus Hiring (FY 23) assessment on 04th September 2022  
+Message-Id: <20220903152359.0A051600DB@smtp80.tcs-itontap.com>
+Date: Sat,  3 Sep 2022 20:53:59 +0530 (IST)
+From: careers.tcshub@mail.digialm.com
+
+--===============4210883730687801725==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+RGVhciBZQUtLQU5USSBBVklOQVNIIFJFRERZCgpUaGlzIGlzIGluIHJlZmVyZW5jZSB0byB0aGUg
+VENTIENhbXB1cyBIaXJpbmcgKEZZIDIzKSBhc3Nlc3NtZW50IG9uIDA0dGggU2VwdGVtYmVyIDIw
+MjIuCgpQbGVhc2UgZmluZCBiZWxvdyB0aGUgbGluayBmb3IgdGhlIFRDUyBDYW1wdXMgSGlyaW5n
+IChGWSAyMykgYXNzZXNzbWVudCBvbiAwNC4wOS4yMDIyIGFuZCBvdGhlciBkZXRhaWxzCgpFeGFt
+IGxpbmsgOiBodHRwczovL2xlYXJuaW5nLnRjc2lvbmh1Yi5pbi9odWIvdGNzLW9mZmNhbXB1cy9l
+dmVudGxvZ2luLwoKUmVnaXN0cmF0aW9uIHN0YXJ0cyBPTkUgSG91ciBiZWZvcmUgdGhlIEV4YW0g
+VGltaW5nLgoKRXhhbSBUaW1pbmcgOiAwOTowMCBBTQoKVXNlciBJRDogQ1QyMDIyMzkyMTIzOQpQ
+YXNzd29yZDogODE3OTgxMDY0OAoKSW1wb3J0YW50IE5vdGU6IEV4YW0gUmVnaXN0cmF0aW9uIHdp
+bGwgc3RhcnQgNjAgbWludXRlcyBwcmlvciB0byB0aGUgRXhhbSBTdGFydCBUaW1lLiBZb3UgbWF5
+IG5vdCBiZSBhbGxvd2VkIHRvIHN0YXJ0IHRoZSBleGFtIGFmdGVyIHRoZSBleGFtIHN0YXJ0IHRp
+bWUgYXMgbWVudGlvbmVkLgoKS2luZGx5IG5vdGUgdGhlIGZvbGxvd2luZzoKKllvdSBzaG91bGQg
+aGF2ZSBhIHN5c3RlbSB3aXRoIGEgd29ya2luZyB3ZWJjYW0gYW5kIGEgbWljcm9waG9uZS4KKllv
+dSBtdXN0IGRvd25sb2FkIHRoZSBuZXcgbGF1bmNoZXIgb2YgVmVyc2lvbiA3MCBmb3IgdGhlIHJl
+c3BlY3RpdmUgT1MgYW5kIHRha2UgdGhlIEFzc2Vzc21lbnQuCipUaGUgYXBwbGljYXRpb24gZm9y
+IFdpbmRvd3MgNyBhbmQgMTAgaXMgdGhlIHNhbWUgYW5kIGlzIGRpZmZlcmVudCBmb3IgVWJ1bnR1
+IDE0IGFuZCBVYnVudHUgMTYuCiAgICAgICAqU3VwcG9ydGVkIG9uIGFsbCB0aGUgYnJvd3NlcnMg
+YW5kIGFsbCB0aGUgdmVyc2lvbnMuCiAgICAgICAqQnJvd3NlciB6b29tIHNob3VsZCBiZSBzZXQg
+dG8gMTAwJS4KICAgICAgICpSZWNvbW1lbmRlZCBicm93c2VyOiBHb29nbGUgQ2hyb21lLgoKTm90
+ZToKKlRoZSBtaW5pbXVtIGludGVybmV0IGJhbmR3aWR0aCByZXF1aXJlZCBhdCB5b3VyIGVuZCBp
+cyA1IE1icHMuCipBbHNvIGVuc3VyZSB0aGF0IHlvdSBoYXZlIGF0IGxlYXN0IDEwMCBNQiBvZiBk
+aXNrc3BhY2UgZnJlZSBhcyB5b3UgaGF2ZSB0byBkb3dubG9hZCA0NU1CIGZpbGVzIHdoaWNoIHdp
+bGwgYmUgdXNlZCB0byBsYXVuY2ggdGhlIAogYXNzZXNzbWVudAoqVGhpcyBpcyBhbiBvbmxpbmUg
+cHJvY3RvcmVkIGFzc2Vzc21lbnQsIHlvdXIgbW92ZW1lbnRzIGFuZCBQQyBhY3Rpdml0eSBpcyBt
+b25pdG9yZWQgcmVtb3RlbHkuIFBsZWFzZSBkbyBub3QgdXNlIHRoZSBwaG9uZSwgdGFrZSAKIGhl
+bHAgZnJvbSBvdGhlcnMgdG8gYW5zd2VyIHRoZSBhc3Nlc3NtZW50LgogQWRvcHRpb24gb2YgYW55
+IHVuZmFpciBtZWFucyBhdCB0aGUgYXNzZXNzbWVudCB3aWxsIHJlc3VsdCBpbiBkaXNxdWFsaWZp
+Y2F0aW9uIGZyb20gdGhlIFRDUyBTZWxlY3Rpb24gUHJvY2Vzcy4KCllvdSBjYW4gbWFrZSB1c2Ug
+b2YgdGhlIGZvbGxvd2luZyBkZXRhaWxlZCBzdGVwIGJ5IHN0ZXAgaW5zdGFsbGF0aW9uIGd1aWRl
+IHRvIGRvd25sb2FkIGFuZCBzdGFydCB0aGUgbGF1bmNoZXIuCipDbGljayBvbiB0aGUgbGluayBy
+ZWNlaXZlZCBmb3IgSUJBIG92ZXIgYW4gZW1haWwgb3IgY29weSBwYXN0ZSB0aGUgbGluayBpbiBi
+cm93c2VyCipTdGFydCB0aGUgYXNzZXNzbWVudCB3aXRoIGxvZ2luIGNyZWRlbnRpYWxzCipOb3Rl
+IGRvd24gdGhlIHVuaXF1ZSBrZXkgZ2VuZXJhdGVkLiBUaGUgdG9rZW4gKFVuaXF1ZSBrZXkpIGdl
+bmVyYXRlZCB3aWxsIGJlIHZhbGlkIG9ubHkgZm9yIHRlbiBtaW51dGVzLiBUaGUgdGltZXIgd2ls
+bCBiZSBzaG93biBvbiAKIHlvdXIgc2NyZWVuLiBZb3UgY2FuIGNvcHkgdGhlIHRva2VuIHRvIGJl
+IHBhc3RlZCBsYXRlcgoqRG93bmxvYWQgdGhlIG5ldyBsYXVuY2hlciAodmVyc2lvbiA3MCkgb2Yg
+dGhlIHJlcXVpcmVkIE9wZXJhdGluZyBTeXN0ZW0uCipFeHRyYWN0ICh1bnppcCkgdGhlIGRvd25s
+b2FkZWQgZmlsZS4KKk9wZW4gdGhlIGxhdW5jaGVyLgoqSW5wdXQgdGhlIHVuaXF1ZSBrZXkgKHRv
+a2VuKSBnZW5lcmF0ZWQsIHNlbGVjdCB0aGUgYnJvd3NlciwgYW5kIGNsaWNrIExhdW5jaCB0byBz
+dGFydCB0aGUgYXNzZXNzbWVudC4gQ2xpY2sgUnVuIEFueXdheSBpZiBwcm9tcHRlZC4gCiBUaGlz
+IHdpbGwgZm9yY2UgYWxsIG90aGVyIHByb2dyYW1zIHRoYXQgYXJlIHJ1bm5pbmcgdG8gY2xvc2Uu
+CipUaGUgdW5pcXVlIGtleSAodG9rZW4pIGdlbmVyYXRlZCB3aWxsIGJlIHZhbGlkIG9ubHkgZm9y
+IHRlbiBtaW51dGVzLiAuIFlvdSBjYW4gY29weSB0aGUgdG9rZW4gdG8gYmUgcGFzdGVkIGxhdGVy
+LiBJZiB5b3UgYXJlIG5vdCBhYmxlIHRvIAogc3RhcnQgdGhlIGFzc2Vzc21lbnQgd2l0aGluIHRl
+biBtaW51dGVzLCB0aGV5IG11c3QgZ2V0IHRoZW0gdmVyaWZpZWQgYWdhaW4gYW5kIGxhdW5jaCB0
+aGUgYXNzZXNzbWVudCBhZ2FpbiB0byBnZW5lcmF0ZSB0aGUgbmV3IGtleS4KCk5vdGU6CipCYXNl
+ZCBvbiB0aGUgZmVhc2liaWxpdHksIHRoZSBsYXVuY2hlciBmaWxlIGNhbiBiZSBrZXB0IGluIGEg
+bG9jYWwgc2hhcmVkIHBhdGgsIGFuZCB5b3UgY2FuIG1ha2UgdXNlIG9mIHRoZSBzYW1lIGluc3Rl
+YWQgb2YgCiBkb3dubG9hZGluZywgZm9yIGZhc3RlciBhY2Nlc3MuCipZb3UgbXVzdCBiZSBpbiBm
+cm9udCBvZiBQQy9MQVBUT1AgZm9yIHRoZSB3aG9sZSBkdXJhdGlvbiBvZiB0aGUgZXhhbQoqQnJl
+YWsvQmlvIGJyZWFrIGFyZSBub3QgYWxsb3dlZCBkdXJpbmcgdGhlIGV4YW0sIHNvIHBsZWFzZSBl
+bnN1cmUgeW91IGFyZSBwcmVzZW50IGZvciB0aGUgd2hvbGUgZHVyYXRpb24gb2YgdGhlIGV4YW0g
+d2l0aG91dCBhbnkgCiBkaXNydXB0aW9uCipUaGUgYXVkaW8gYW5kIHZpZGVvIHdpbGwgYWxzbyBi
+ZSBjYXB0dXJlZCBkdXJpbmcgdGhlIGV4YW0KKllvdSBzaG91bGQgbm90IGJlIHNlZW4gb2Z0ZW4g
+bG9va2luZyBhd2F5IG9yIGRvd24gZnJvbSB0aGUgc2NyZWVuLiBJZiB5b3UgbXVzdCBkbyBhIGxl
+bmd0aHkgcm91Z2ggd29yaywgc2xpZ2h0bHkgc2hpZnQgYmFjayBpbiBzdWNoIGEgCiB3YXkgdGhh
+dCBjYW1lcmEgY2FuIGNhcHR1cmUgeW91IGRvaW5nIHJvdWdoIHdvcmsgb24gdGhlIHNoZWV0LiBE
+byBub3Qga2VlcCBhbnkgbW9iaWxlIG9yIG90aGVyIGFzc2lzdGl2ZSBkZXZpY2Ugb24geW91ciBk
+ZXNrIG9yIAogbmVhciB5b3UuCgpBbHNvIHBsZWFzZSBlbnN1cmUgdGhhdCB5b3UgaGF2ZSBhIExh
+cHRvcCB3aXRoIGNhbWVyYSBhbmQgbWljcm9waG9uZSwgR29vZCBpbnRlcm5ldCBjb25uZWN0aW9u
+IGFuZCBhIGJhY2t1cCBjb25uZWN0aW9uIGxpa2UgV2ktRmkgb3IgaG90c3BvdAoKV2lzaCB5b3Ug
+YWxsIHRoZSBiZXN0Cgo=
+
+--===============4210883730687801725==--

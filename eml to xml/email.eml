@@ -1,0 +1,197 @@
+Delivered-To: avinash.reddy@databeat.io
+Received: by 2002:a0c:ec05:0:b0:696:90a8:c68 with SMTP id y5csp808069qvo;
+        Wed, 27 Mar 2024 21:13:28 -0700 (PDT)
+X-Forwarded-Encrypted: i=4; AJvYcCWm9yHY/YVSLA8TnhTw0Nuj5dJJ+fvm25JQ/hggqS/oAO/lLOejUffrn+3RJBfEFElq6ZUXKvl2yUs1kKp+trH6zqBNrP3sEfoz
+X-Received: by 2002:a05:6102:3712:b0:478:43bb:3efb with SMTP id s18-20020a056102371200b0047843bb3efbmr1602279vst.0.1711599208271;
+        Wed, 27 Mar 2024 21:13:28 -0700 (PDT)
+ARC-Seal: i=3; a=rsa-sha256; t=1711599208; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=UqnV1k9LqNnl40DJbW48WA2HLQQYeboTo1wSP82yNlLiy65n5vMVyizF5ohajeTmmw
+         cHGlcAl0bzCyHb1SvuakcwUTR9J3bvMesaj8dnoON057vJd9GHotfYlSrlDzPUfqcFa7
+         b0St8tnYWmrlv0l3axV+90Q0fliX/5VJQVtkBqsy9bssn+ciVU8GvLdQdVsQ2yN5FQ0j
+         QM0faFY00jTegm5IyIwAFByhrskatEZh9QBJDxYXfo8zWStJX4whXV6Neu7ab3pLF/t3
+         6Nlp1mo4AW7RZBpVB46XSiaeUFgCqCWxiBFn2dGe+jlFKtclujbLr6qkR+PIaamh42pA
+         WWzg==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:cc:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=zNiAzGioYPkbLEuGO2FcPKrrIpSF03BCx0ZkVSpsDMs=;
+        fh=Y+jh2cz6myfIQpzBgfi6x3WBhQONmqMvzK3XAHEzi28=;
+        b=ZwI0o6EX6WL9HmRIGRHFfbkgXgdWYi/Cf85IVffjqnS6KW+1BSEQc3m19RkgZZzMZ4
+         XkCJPACp5TrD+BkX63wnWYpOraKtnRzAg7VHH5tW7vg/ss6Snf56R3CSrFyNr1gcQyHF
+         NI43DeE8rMDA6wawnmpk5VIG+L9nGWSzSzxueEkDd+Cq8NZvqsO0CU+hP5COFIyNlcBH
+         N0arNf9QsWyDfT6Upjmn3YBsHZpYAFw1mZIMKA3n9uJZw+IPwK3ZZryQuenmTSKwdZZ1
+         ctNHW/NKmK/c4XY6HeJ06Pzn8TwFHVocI3SQHS2WBYdIv8wcXbuRAKfXIFLKg4+hfoh4
+         4OXg==;
+        dara=google.com
+ARC-Authentication-Results: i=3; mx.google.com;
+       dkim=pass header.i=@databeat.io header.s=google header.b=KQobx+56;
+       arc=pass (i=2 spf=pass spfdomain=databeat.io dkim=pass dkdomain=databeat.io dmarc=pass fromdomain=databeat.io);
+       spf=pass (google.com: domain of analytics+bncbc6z534o6uobbu64soyamgqe4fwka3i@databeat.io designates 209.85.220.69 as permitted sender) smtp.mailfrom=analytics+bncBC6Z534O6UOBBU64SOYAMGQE4FWKA3I@databeat.io;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=databeat.io
+Return-Path: <analytics+bncBC6Z534O6UOBBU64SOYAMGQE4FWKA3I@databeat.io>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id f21-20020a67ee15000000b00476871b3388sor364276vsp.5.2024.03.27.21.13.28
+        for <avinash.reddy@databeat.io>
+        (Google Transport Security);
+        Wed, 27 Mar 2024 21:13:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of analytics+bncbc6z534o6uobbu64soyamgqe4fwka3i@databeat.io designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@databeat.io header.s=google header.b=KQobx+56;
+       arc=pass (i=2 spf=pass spfdomain=databeat.io dkim=pass dkdomain=databeat.io dmarc=pass fromdomain=databeat.io);
+       spf=pass (google.com: domain of analytics+bncbc6z534o6uobbu64soyamgqe4fwka3i@databeat.io designates 209.85.220.69 as permitted sender) smtp.mailfrom=analytics+bncBC6Z534O6UOBBU64SOYAMGQE4FWKA3I@databeat.io;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=databeat.io
+ARC-Seal: i=2; a=rsa-sha256; t=1711599208; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=tllch1SjlX8OSOPMeIr+tBKbaRW5L8sqKA4qzqeGK4LJUUSEiEmXL+ZijbqVMOnIWK
+         XgO3NGbUdRINOOcvEcX7GNQY+oBaosep7nDyOs+M+od/KLmddv+gz7YkdWsmO2rCYP8i
+         /rcQmhVoWKtqJ64VkKk0HHCvAg3aOO9F7WK5FCQ9Y2sTnnOgHmqIAbfOrYKAMJPfz4OM
+         Qd1CWMbh3lcBdS2+yuMSUtBGH8WOGP6oBlEvjgTas6D18nczXoBYJUiG8GsGY0VJf9N4
+         bJB099bbu9MVHmLsqXSIGImqN2vjwTgnkgrDh1HabEXkgEALZwNCV9VQcvlQB5rzYHu2
+         V00Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:cc:to:subject:message-id:date:from
+         :mime-version:dkim-signature;
+        bh=zNiAzGioYPkbLEuGO2FcPKrrIpSF03BCx0ZkVSpsDMs=;
+        fh=Y+jh2cz6myfIQpzBgfi6x3WBhQONmqMvzK3XAHEzi28=;
+        b=Ll7CI60daWPund52lZ25NNZmVJnL2dzRxNpjzpBdfv/CVPesztdb7x0KPP1tUB/AxG
+         2frgsOWltyu9APSeNOM34+qiaW51iIA6RgBtgrg+FPfllIiQ76TvwodstXvhNOWYVI9/
+         YyZq3cStdYnYCG/G5JP0hbgivEzzuyY84ysKYC2o5aeg9SPg1lq5o3efJl/XNLe81tK8
+         bTNF2siz3DGmefCeuw68HgAr/0197ULMTcbGDeSGbmifQ3Ofkwsn8uIKdWRPAifDXPGP
+         ecW8SThz8cYDT0zQ84lkXHTuk9hbGvOGS/JH0lfMZgtwPo9iTF+QnviFqRBA4vJAKvDB
+         yttg==;
+        darn=databeat.io
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@databeat.io header.s=google header.b="TumdbR/m";
+       spf=pass (google.com: domain of arjun.muppersi@databeat.io designates 209.85.220.41 as permitted sender) smtp.mailfrom=arjun.muppersi@databeat.io;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=databeat.io
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=databeat.io; s=google; t=1711599208; x=1712204008; darn=databeat.io;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :list-id:mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:cc:to:subject:message-id:date:from:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zNiAzGioYPkbLEuGO2FcPKrrIpSF03BCx0ZkVSpsDMs=;
+        b=KQobx+56wX4vNQXRE1hUCcR5MTPQPELwmcKnsgGbPU48aoa5BkBeub/LtRVSSfUnjv
+         vlhHkB8q5Torc5HvrJ9vyrkF4fUVVRYpl2nnec3ogSOs8tAbGxsDWhYtk96x3FBxVy5/
+         nRlKeXdN0Xfj3Sfrc7GT0vSV2MOrDyb9RgCeI=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1711599208; x=1712204008;
+        h=list-unsubscribe:list-subscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:cc:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=zNiAzGioYPkbLEuGO2FcPKrrIpSF03BCx0ZkVSpsDMs=;
+        b=w9DmL2zlB5zLAr+8FGo3VB3v/QyO2dMjPloOUFtk+FuQddIxNgzosfdGLMJM1uvQeN
+         32DfkAR0x4fdqEzqYge5VXC+Z9DoZR8LzLLkHm7tQs8+WqQ7NfD6W6g2BLQiZ9c3knF9
+         3c4xjhUBxCNLoJonXjpemNfOzOOzBkNeTd0pXCMN9iKVQ+DZF9JiEeu3XAjEu5UeJvdZ
+         UJtX9q2NcDcd9LmZQB38nnY4t+putV02AgyYaS2H+nzE3t/TQvyxMYAtkbpqTk9S07Gg
+         +1zdDlgip00hIVvoGN4GANbhvqdOv0e93VTcP+cHyDPifs+IWttaSGzxIwevSV+/B1vR
+         7QCg==
+X-Forwarded-Encrypted: i=2; AJvYcCXWPay76xJI53jn7HAPndYepUt4CFnt76RKUlc0s4QwvM56fzInSz61PZPz1Mbu4t3la9YwUKshvW9QTA4cX5r0/eXPNbZxgBWJ
+X-Gm-Message-State: AOJu0YyrOcmQd7wsDzu6IfrMpCzBttg60C296FTliQ3qlKnKhDgdybQI
+	Nive3FCjqR2Qg4DhZ8U8Q0sQnYigbowkVl+GWR1EFbQPfYnJOYrkDMHn4WF/whsc8Q==
+X-Google-Smtp-Source: AGHT+IFJ8bR4u1KqNn9Q8YcXZ9sCJbiqTBMb3PQxu8cu2faiEQA0J3CCcsDK8TbjyzqO0kM2PMLceg==
+X-Received: by 2002:a05:6808:302a:b0:3c3:c785:dab1 with SMTP id ay42-20020a056808302a00b003c3c785dab1mr500259oib.6.1711599187467;
+        Wed, 27 Mar 2024 21:13:07 -0700 (PDT)
+X-BeenThere: analytics@databeat.io
+Received: by 2002:a4a:4305:0:b0:5a4:8287:2eb7 with SMTP id k5-20020a4a4305000000b005a482872eb7ls168566ooj.1.-pod-prod-00-us;
+ Wed, 27 Mar 2024 21:13:06 -0700 (PDT)
+X-Received: by 2002:a4a:da5a:0:b0:5a4:6b8d:5216 with SMTP id f26-20020a4ada5a000000b005a46b8d5216mr532347oou.4.1711599186604;
+        Wed, 27 Mar 2024 21:13:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1711599186; cv=none;
+        d=google.com; s=arc-20160816;
+        b=snvwiZBRjBLdOH6L4FZXwQldzySKN2+HzIqlUIEMBA/+WhYuZQ9RrVA/1ElLA4izOL
+         MtDSiE3iI/w7P817RgGgm13616jED+m1/pN3wuL7p00om7SIRDKwIGgYXFOsl1ScHOfw
+         rMSRECs2dfvYH+2m414hszqDyVe9NU5QhZwcrHZh2vaGpH0IPxq6Wely3e7/qEqRob+l
+         poqPsivN4Hz3OKX/K72y+jEMknZbVzJrmO7lSSxmlJLCm+0wodVe3SuSxbBdZizEMajw
+         PA70tqSvb77RYKw53uQreOqcyuAfOCFld0tBycLEnq9PCnYIr8WF7WWExUMUDANNM/rB
+         uBRQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=zNiAzGioYPkbLEuGO2FcPKrrIpSF03BCx0ZkVSpsDMs=;
+        fh=h5YBjTyF0CCeYu0gR8MDC7sNHwVaBW7cvlQtiF6Gd+k=;
+        b=Knp0spaiP80n4DvmccBOsg6iW2oUGvA4MbZaGJiLFl0+0Zn7r1wqNufHvWsC4NUxB6
+         /JjoIv9aqmEKcbydUG2T2gVxnvN7VDMYf96vNr52KBb6SIGekT+ht4MO9Y5CZHudkHrU
+         Ih04pJFvrclSv4ctgkuep2hw4lcUaDGKUYzCJdgCnt241Ssp5SSqqb585RiwMQtVst7O
+         o3fw5IWA+XPj2ZePvHKM/llWB/SXUwRnPoQYpDYYB2ibVb9sjjb93sq8h0Xz1wtFvwJ4
+         egBz9lSVfm5R5/WOZS67x6ODXya9WMfOmlc2xBqpgNypDnfQVEZgCP3dI53MccdV1BXc
+         q61g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@databeat.io header.s=google header.b="TumdbR/m";
+       spf=pass (google.com: domain of arjun.muppersi@databeat.io designates 209.85.220.41 as permitted sender) smtp.mailfrom=arjun.muppersi@databeat.io;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=databeat.io
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id i32-20020a056830452000b006e4d1ed50a1sor847614otv.9.2024.03.27.21.13.06
+        for <analytics@databeat.io>
+        (Google Transport Security);
+        Wed, 27 Mar 2024 21:13:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of arjun.muppersi@databeat.io designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Received: by 2002:a05:6870:648a:b0:220:9f66:4fdc with SMTP id
+ cz10-20020a056870648a00b002209f664fdcmr521717oab.11.1711599186272; Wed, 27
+ Mar 2024 21:13:06 -0700 (PDT)
+MIME-Version: 1.0
+From: Arjun Muppersi <arjun.muppersi@databeat.io>
+Date: Thu, 28 Mar 2024 09:42:56 +0530
+Message-ID: <CABniJDjv=t3V+Vk9JSQKUpu1opr0hPaEtfpsjqO_8ah+cAniUQ@mail.gmail.com>
+Subject: Variable Bonus Update
+To: DataBeat HR <hr@databeat.io>
+Cc: Analytics <analytics@databeat.io>
+Content-Type: multipart/alternative; boundary="0000000000007f01df0614b0bd2f"
+X-Original-Sender: arjun.muppersi@databeat.io
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@databeat.io header.s=google header.b="TumdbR/m";       spf=pass
+ (google.com: domain of arjun.muppersi@databeat.io designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=arjun.muppersi@databeat.io;       dmarc=pass
+ (p=NONE sp=NONE dis=NONE) header.from=databeat.io
+Precedence: list
+Mailing-list: list analytics@databeat.io; contact analytics+owners@databeat.io
+List-ID: <analytics.databeat.io>
+X-Spam-Checked-In-Group: analytics@databeat.io
+X-Google-Group-Id: 318547654730
+List-Post: <https://groups.google.com/a/databeat.io/group/analytics/post>, <mailto:analytics@databeat.io>
+List-Help: <https://support.google.com/a/databeat.io/bin/topic.py?topic=25838>,
+ <mailto:analytics+help@databeat.io>
+List-Archive: <https://groups.google.com/a/databeat.io/group/analytics/>
+List-Subscribe: <https://groups.google.com/a/databeat.io/group/analytics/subscribe>,
+ <mailto:analytics+subscribe@databeat.io>
+List-Unsubscribe: <mailto:googlegroups-manage+318547654730+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/a/databeat.io/group/analytics/subscribe>
+
+--0000000000007f01df0614b0bd2f
+Content-Type: text/plain; charset="UTF-8"
+
+Hi All,
+
+Here is an update on the Variable Bonus for the year 2023. We have made few
+enhancements in evaluating the performance review process making it more
+efficient and transparent.
+
+We are at the verge of finalizing the variable bonus for all the eligible
+employees and we'll send out a communication on the same, next week.
+
+Please make a note that the disbursement of Variable Bonus will occur in
+the second week of April.
+
+--0000000000007f01df0614b0bd2f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi All,<div><br></div><div>Here is an update on the Variab=
+le Bonus for the year 2023. We have made few enhancements in evaluating the=
+ performance review process making it more efficient and transparent.</div>=
+<div><br></div><div>We are at the verge of finalizing the variable bonus fo=
+r all the eligible employees and we&#39;ll send out a communication on the =
+same, next week.</div><div><br></div><div>Please make a note that the disbu=
+rsement of Variable Bonus will occur in the second week=C2=A0of April.</div=
+><div><br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_signature" dat=
+a-smartmail=3D"gmail_signature"><div dir=3D"ltr"><img width=3D"420" height=
+=3D"126" src=3D"https://ci3.googleusercontent.com/mail-sig/AIorK4ymrZ5o-VHr=
+Fsk54VCN-jOfJpLg_fOn6NE-06CvR_idfJ8pWuSTCQ4g-h0CKpeGrxNV0KjEeEbCqyzD"><br><=
+/div></div></div></div></div>
+
+--0000000000007f01df0614b0bd2f--

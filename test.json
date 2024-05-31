@@ -1,0 +1,136 @@
+{
+    "company": "Acme Corporation",
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "department": "Engineering",
+            "age": 35,
+            "skills": [
+                "Java",
+                "Python",
+                "C++"
+            ],
+            "projects": [
+                {
+                    "name": "Project X",
+                    "description": "Developing a new software platform",
+                    "start_date": "2023-01-15",
+                    "end_date": "2024-06-30",
+                    "status": "In Progress",
+                    "team": [
+                        "John Doe",
+                        "Alice Smith",
+                        "Bob Johnson"
+                    ],
+                    "tasks": [
+                        {
+                            "task_id": 1,
+                            "description": "Design database schema",
+                            "assigned_to": "John Doe",
+                            "status": "Completed",
+                            "due_date": "2023-02-28"
+                        },
+                        {
+                            "task_id": 2,
+                            "description": "Implement user authentication",
+                            "assigned_to": "Alice Smith",
+                            "status": "In Progress",
+                            "due_date": "2023-04-15"
+                        },
+                        {
+                            "task_id": 3,
+                            "description": "Optimize code performance",
+                            "assigned_to": "Bob Johnson",
+                            "status": "Pending",
+                            "due_date": "2023-03-31"
+                        }
+                    ]
+                },
+                {
+                    "name": "Project Y",
+                    "description": "Building a mobile app",
+                    "start_date": "2024-01-10",
+                    "end_date": "2024-08-30",
+                    "status": "Planning",
+                    "team": [
+                        "John Doe",
+                        "Emily Brown",
+                        "Charlie Wilson"
+                    ],
+                    "tasks": [
+                        {
+                            "task_id": 1,
+                            "description": "Create wireframes",
+                            "assigned_to": "Emily Brown",
+                            "status": "In Progress",
+                            "due_date": "2024-02-28"
+                        },
+                        {
+                            "task_id": 2,
+                            "description": "Develop frontend UI",
+                            "assigned_to": "Charlie Wilson",
+                            "status": "Pending",
+                            "due_date": "2024-04-15"
+                        },
+                        {
+                            "task_id": 3,
+                            "description": "Setup backend server",
+                            "assigned_to": "John Doe",
+                            "status": "Pending",
+                            "due_date": "2024-03-31"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Alice Smith",
+            "department": "Marketing",
+            "age": 28,
+            "skills": [
+                "Marketing Strategy",
+                "Digital Marketing",
+                "Content Creation"
+            ],
+            "projects": [
+                {
+                    "name": "Marketing Campaign A",
+                    "description": "Launching a new product",
+                    "start_date": "2024-03-01",
+                    "end_date": "2024-05-30",
+                    "status": "Active",
+                    "team": [
+                        "Alice Smith",
+                        "Emily Brown",
+                        "David Clark"
+                    ],
+                    "tasks": [
+                        {
+                            "task_id": 1,
+                            "description": "Design promotional materials",
+                            "assigned_to": "Alice Smith",
+                            "status": "Completed",
+                            "due_date": "2024-03-15"
+                        },
+                        {
+                            "task_id": 2,
+                            "description": "Create social media content",
+                            "assigned_to": "Emily Brown",
+                            "status": "In Progress",
+                            "due_date": "2024-04-15"
+                        },
+                        {
+                            "task_id": 3,
+                            "description": "Plan advertising strategy",
+                            "assigned_to": "David Clark",
+                            "status": "Pending",
+                            "due_date": "2024-04-30"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

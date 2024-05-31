@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Email><From>John Doe &lt;john.doe@example.com&gt;</From><To>Jane Smith &lt;jane.smith@example.com&gt;</To><Subject>Meeting Reminder</Subject><Date>Wed, 29 May 2024 10:00:00 +0000</Date><Message-ID>&lt;1234567890@example.com&gt;</Message-ID><MIME-Version>1.0</MIME-Version><Content-Type>multipart/mixed; boundary="boundary-string"</Content-Type><Parts><Part><Content-Type>text/plain; charset="UTF-8"</Content-Type><Content-Transfer-Encoding>7bit</Content-Transfer-Encoding><ContentType>text/plain</ContentType><Content>Hi Jane,
+
+This is a reminder about our meeting scheduled for tomorrow at 2 PM. Please let me know if you need to reschedule.
+
+Best,
+John
+</Content></Part><Part><Content-Type>text/html; charset="UTF-8"</Content-Type><Content-Transfer-Encoding>7bit</Content-Transfer-Encoding><ContentType>text/html</ContentType><Content>&lt;html&gt;
+&lt;body&gt;
+&lt;p&gt;Hi Jane,&lt;/p&gt;
+&lt;p&gt;This is a reminder about our meeting scheduled for &lt;b&gt;tomorrow at 2 PM&lt;/b&gt;. Please let me know if you need to reschedule.&lt;/p&gt;
+&lt;p&gt;Best,&lt;br&gt;John&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</Content></Part><Part><Content-Type>application/pdf; name="MeetingAgenda.pdf"</Content-Type><Content-Transfer-Encoding>base64</Content-Transfer-Encoding><Content-Disposition>attachment; filename="MeetingAgenda.pdf"</Content-Disposition><ContentType>application/pdf</ContentType><Content filename="MeetingAgenda.pdf">%PDF-1.4
+%ª«¬­
+4 0 obj
+&lt;&lt;
+/Title (þ</Content></Part></Parts></Email>

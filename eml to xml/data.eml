@@ -1,0 +1,37 @@
+Content-Type: multipart/mixed; boundary="===============1994428273039734852=="
+MIME-Version: 1.0
+From: John Doe <john.doe@example.com>
+To: Jane Smith <jane.smith@example.com>
+Subject: Meeting Reminder
+Date: Wed, 29 May 2024 10:00:00 +0000
+Message-ID: <1234567890@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1994428273039734852=="
+
+--===============1994428273039734852==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+SGkgSmFuZSwKClRoaXMgaXMgYSByZW1pbmRlciBhYm91dCBvdXIgbWVldGluZyBzY2hlZHVsZWQg
+Zm9yIHRvbW9ycm93IGF0IDIgUE0uIFBsZWFzZSBsZXQgbWUga25vdyBpZiB5b3UgbmVlZCB0byBy
+ZXNjaGVkdWxlLgoKQmVzdCwKSm9obgo=
+
+--===============1994428273039734852==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PGh0bWw+Cjxib2R5Pgo8cD5IaSBKYW5lLDwvcD4KPHA+VGhpcyBpcyBhIHJlbWluZGVyIGFib3V0
+IG91ciBtZWV0aW5nIHNjaGVkdWxlZCBmb3IgPGI+dG9tb3Jyb3cgYXQgMiBQTTwvYj4uIFBsZWFz
+ZSBsZXQgbWUga25vdyBpZiB5b3UgbmVlZCB0byByZXNjaGVkdWxlLjwvcD4KPHA+QmVzdCw8YnI+
+Sm9objwvcD4KPC9ib2R5Pgo8L2h0bWw+Cg==
+
+--===============1994428273039734852==
+Content-Type: application/pdf
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJaqrrK0KNCAwIG9iago8PAovVGl0bGUgKP4=
+
+--===============1994428273039734852==--
